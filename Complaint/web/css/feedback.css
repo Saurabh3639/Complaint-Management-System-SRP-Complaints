@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.postimg.cc/QdN1Nn1p/feedback.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.ui {
+    background-color: #333;
+    padding: 30px;
+    margin-top: 50px;  
+    opacity: 0.8;
+}
+.ui label{
+    color: #fff;
+}
+
+.ui h1{
+    color: #fff;
+    font-family: cursive;
+}
+
+.inputfield
+{  
+ position:relative;  
+ top:30px;  
+ width:900px;  
+ line-height: 60px!important;  
+}
+ 
+ /* general utility classes */
+.warn {
+  color: lightsalmon;
+}
+
+/* header */
+header[role=banner] {
+  background: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+header[role=banner] h1 {
+  margin: 0;
+  font-weight: 300;
+  padding: 1rem;
+}
+header[role=banner] h1:before {
+  content: "";
+  font-family: FontAwesome;
+  padding-right: 0.6em;
+  color: turquoise;
+}
+header[role=banner] .utilities {
+  color: #ddd;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 18px;
+}
+#banner1 {
+    text-decoration: none;
+    color: lightsalmon;
+}
+#logout {
+    color: lightsalmon;
+}
+
+/* navbar */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+  
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+.nav li a:hover {
+    background-color: lightsalmon;
+    /* background-color: #111; */
+    text-decoration: none;
+}
+  
+.nav .active {
+    background-color: #4CAF50;
+}

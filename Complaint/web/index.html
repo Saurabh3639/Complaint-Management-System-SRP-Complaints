@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SRP Complaints</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Complaint Management</title>
+	<!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+	<style>
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+}
+  
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #5faee3;
+    text-decoration: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+  
+#header {
+    height: 70px;
+    background:#d8f0f2;
+}
+  
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+  
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+  
+.navbar li {
+    position: relative;
+    margin-left: 8rem;
+}
+  
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    white-space: nowrap;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+ 
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: #3498db;
+}
+  
+#hero {
+    width: 100%;
+    height: 91vh;
+    background: url("https://i.postimg.cc/xCfsjQ45/pexels-luis-quintero-2339722.jpg") center center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+  
+#hero:before {
+    content: "";
+    background: rgba(56, 64, 70, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+#hero h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+  
+section {
+    padding: 60px 0;
+}
+.section-bg {
+    background-color:	#d8f0f2;
+    color: black;
+} 
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+  
+.btn{
+      margin-top: 1rem;
+      display: inline-block;
+      padding:.8rem 3rem;
+      font-size: 1.7rem;
+      cursor: pointer;
+      color:#fff;
+      background:#3498db;
+      border-radius: .5rem;
+      box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+      position: relative;
+      z-index: 0;
+      overflow:hidden;
+}
+.btn::before{
+      content: '';
+      position: absolute;
+      top:0; right:0;
+      height: 100%;
+      width:0%;
+      background:#5faee3;
+      z-index: -1;
+      transition: .2s ease-out;
+}
+.btn:hover::before{
+      left:0;
+      width:100%;
+}
+  
+.footer-bottom{
+      position: absolute;
+      bottom: -15;
+      left: 0;
+      right: 0;
+      background: #222;
+      height: auto;
+      width: 98.9vw;
+      font-family: "Open Sans";
+      padding-top: 40px;
+      color: #fff;
+}
+.footer-bottom h3{
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 3rem;
+      margin-left: 39px;
+}
+.footer-bottom p{
+      max-width: 500px;
+      margin: 5px auto;
+      line-height: 28px;
+      font-size: 14px;
+      margin-left: 540px;
+}
+
+.socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 1rem 0;
+}
+.socials li{
+      margin: 0 20px;
+}
+.socials a{
+      text-decoration: none;
+      color: #fff;
+}
+.socials a i{
+      font-size: 2.3rem;
+      transition: color .4s ease;  
+}
+.socials a:hover i{
+      color: aqua;
+}
+  
+.footer-bottom{
+      background: #222;
+      width: 98.9vw;
+      padding: 15px 0;
+      text-align: center;
+}
+.footer-bottom p{
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+}
+.footer-bottom span{
+      text-transform: uppercase;
+      opacity: .7;
+      font-weight: 200;
+}
+
+	</style>
+  </head>
+  <body>
+		<header id="header" class="fixed-top d-flex align-items-center">
+			<div class="container d-flex align-items-center">
+		
+			  <nav id="navbar" class="navbar order-last order-lg-0">
+				<ul>
+				  <li><a  href="index.jsp"><lord-icon src="https://cdn.lordicon.com/ssdupzsv.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:32px;height:32px"></lord-icon>&ensp; User Login</a></li>
+				  <li><a  href="officerlogin.jsp"><lord-icon src="https://cdn.lordicon.com/fhtaantg.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:32px;height:32px"></lord-icon>&ensp; Officer Desk</a></li>
+          <li><a  href="empregister.jsp"><lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:32px;height:32px"></lord-icon>&ensp; Employee</a></li>
+          <li><a  href="contactus.html"><lord-icon src="https://cdn.lordicon.com/jqeuwnmb.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:32px;height:32px"> </lord-icon>&ensp; Contact Us</a></li>
+				  <li><a  href="aboutus.html"><lord-icon src="https://cdn.lordicon.com/gmzxduhd.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:32px;height:32px"></lord-icon>&ensp; About Us</a></li>
+				</ul>
+			  </nav>
+		
+			</div>
+		</header>
+
+
+		<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+			<div class="container text-center text-md-left" data-aos="fade-up">
+
+				<div class="centered">
+			    <h1>Welcome to <span style="color: #8dd0fa;" class="text animated pulse">SRP Complaints</span></h1>
+			    <h2>Registering your Complaints is easier Now...</h2>
+          <a href="index.jsp" class="btn">Register Now</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="services" class="services section-bg">
+			<div class="container">
+	  
+			  <div class="section-title">
+				<h2>Services We Provide</h2>
+			  </div>
+	  
+			  <div class="row">
+				<div class="col-md-6 mt-4">
+					<div>
+						<h4>Pipe Leakage</h4>
+					<p style="font-size: 16px;">Minor issues like small leaks have been found to cause much greater damage than natural disasters,
+						 as they happen more frequently and usually remain unnoticed for a long time. 
+						 and we also need to stop wastage of water</p>
+				  </div>
+				</div>
+				<div class="col-md-6 mt-4">
+				  <div>
+					<h4>Sanitation</h4>
+					<p style="font-size: 16px;">Proper sanitation facilities can promote our health. Throughout the developing world,
+						 many people do not have access to suitable sanitation facilities, 
+						 resulting in improper waste disposal so are taking care of this also.</p>
+				  </div>
+				</div>
+				<div class="col-md-6 mt-4">
+				  <div>
+					<h4>Pot Holes/Man Holes</h4>
+					<p style="font-size: 16px;">It's somewhat uncertain if potholes may necessarily cause some injuries. 
+						But unfortunately, potholes and manholes are capable of causing serious to fatal accidents. 
+						So The regular inspection and servicing of all these holes are done by us.</p>
+				  </div>
+				</div>
+				<div class="col-md-6 mt-4">
+				  <div>
+					<h4>Garbage Control</h4>
+					<p style="font-size: 16px;">During the recent past, the waste management has received
+						considerable attention from the Central and State Governments and local
+						(municipal) authorities in India. We also need to control this they may cause us some serious disease </p>
+				  </div>
+				</div>
+				<div class="col-md-6 mt-4">
+				  <div >
+					<h4>CCTV</h4>
+					<p style="font-size: 16px;">Today's cities face a wide spectrum of threats ranging from terrorism to rising crime rates,
+						 civil unrests, shootings, natural disasters and other emergencies.
+						to control all of this we are taking our first step.</p>
+				  </div>
+				</div>
+				<div class="col-md-6 mt-4">
+						<div >
+						<h4>Street Lights</h4>
+						<p style="font-size: 16px;">The repair and replacement of all defective, damaged or
+							worn-out components or parts thereof to ensure the proper
+							operation of the lights.</p>
+					  </div>
+				</div>
+			  </div>
+	  
+			</div>
+		</section>
+
+    <div class="footer-bottom">
+        <h3>SRP Complaints</h3>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/srpcomp.laints/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        <h4>copyright &copy; 2021 SRP Complaints. designed by <span>IICMR Students</span></h4>
+    </div>
+
+  </body>    
+</html>

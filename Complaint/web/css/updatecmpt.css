@@ -1,0 +1,125 @@
+body{
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.postimg.cc/yYC536yP/feedbackimg.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+    align-content: center;
+    margin:0;
+    padding:0;
+    display: inline-block;
+}
+
+.headerr{
+    color: black;
+	text-align: center;
+	margin-top: 13rem;
+	margin-bottom: 3rem;
+	font-size:40px
+}
+
+th{
+    color: black;
+    
+}
+
+th{
+    color: black;
+    font-family: Georgia, serif;
+    font-size:10;
+    font-weight: bold;
+    background-color: #d8f0f2;  
+}
+
+td{
+    color: black;
+
+}
+
+td{
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:10;
+    font-weight: bold;
+    background-color: whitesmoke;  
+}
+
+header{ 
+        position: fixed;
+        background: #008b8b;
+        padding: 20px;
+        width: 100%; 
+        height: 70px;
+		justify-content: center;
+}
+.left_area h3{ 
+    font-family:"Georgia", sans-serif;
+    color: #fff;
+    margin: 0; 
+    text-transform: uppercase; 
+    font-size: 25px; 
+    font-weight: 900; 
+    margin-left:20px;} 
+.left_area h3 a {
+    text-decoration: none;
+    color: #fff;
+}
+.left_area span{ 
+        color: #19B3D3;}
+#logout{
+    padding: 5px;
+    float: right; 
+    margin-top: -40px; 
+    margin-right: 40px; 
+    border-radius: 4px;
+    height: 15px;
+    width: 16px;
+    color: #fff; 
+    transition: 0.5s; 
+}
+
+.container {
+    margin-left: 70px;
+}
+
+/* navbar */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    margin-top: 70px;
+    font-weight: bold;
+}
+  
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+.nav li a:hover {
+    background-color: #008b8b;
+    /* background-color: #111; */
+    text-decoration: none;
+}
+  
+.nav .active {
+    background-color: #4CAF50;
+}
+
+.icon {
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
